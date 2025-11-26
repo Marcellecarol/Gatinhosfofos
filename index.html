@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitten Haven - O Mundo dos Gatinhos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Quicksand:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            🐱 Kitten Haven
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#about">Sobre Mim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Amor em forma de <br><span>Ronronados</span></h1>
+            <p>Descubra o mundo mágico dos gatinhos mais fofos. Um refúgio de fofura para alegrar o seu dia!</p>
+            <a href="#gallery" class="cta-button">Ver Gatinhos</a>
+        </div>
+        <div class="hero-image">
+            <img src="assets/hero.png" alt="Gatinho fofo branco brincando">
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Nossos Pequenos Amigos</h2>
+        <div class="gallery-grid">
+            <div class="cat-card" data-name="Mimi" data-age="2 meses"
+                data-desc="Mimi é uma gatinha calico que adora dormir em cestas. Muito carinhosa e calma."
+                data-img="assets/mimi.png">
+                <img src="assets/mimi.png" alt="Gatinho Mimi">
+                <h3>Mimi</h3>
+                <button class="details-btn">Conhecer</button>
+            </div>
+            <div class="cat-card" data-name="Luna" data-age="3 meses"
+                data-desc="Luna é misteriosa e curiosa. Adora explorar cantos escuros e caçar brinquedos."
+                data-img="assets/luna.png">
+                <img src="assets/luna.png" alt="Gatinho Luna">
+                <h3>Luna</h3>
+                <button class="details-btn">Conhecer</button>
+            </div>
+            <div class="cat-card" data-name="Simba" data-age="4 meses"
+                data-desc="Simba é pura energia! Adora correr pelo jardim e brincar com borboletas."
+                data-img="assets/simba.png">
+                <img src="assets/simba.png" alt="Gatinho Simba">
+                <h3>Simba</h3>
+                <button class="details-btn">Conhecer</button>
+            </div>
+            <div class="cat-card" data-name="Nala" data-age="3 meses"
+                data-desc="Nala é uma princesa persa. Elegante e adora ser penteada e mimada."
+                data-img="assets/nala.png">
+                <img src="assets/nala.png" alt="Gatinho Nala">
+                <h3>Nala</h3>
+                <button class="details-btn">Conhecer</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="assets/about_illustration.png" alt="Ilustração fofa de gatinhos e amor">
+            </div>
+            <div class="about-text">
+                <h2>Sobre Nós</h2>
+                <p>Bem-vindo ao Kitten Haven! 🐱✨</p>
+                <p>Somos apaixonados por espalhar alegria através de ronronados e patinhas fofas. Nosso objetivo é
+                    conectar esses pequenos seres de luz com lares cheios de amor.</p>
+                <p>Cada gatinho aqui tem uma história única e está ansioso para encontrar um melhor amigo humano.
+                    Acreditamos que um lar com um gato é um lar mais feliz!</p>
+                <p>Venha nos visitar e se encantar com tanta fofura. ❤️</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Detalhes -->
+    <div id="catModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <img id="modal-img" src="" alt="Gatinho">
+                <div class="modal-info">
+                    <h2 id="modal-name">Nome do Gato</h2>
+                    <span class="modal-age">Idade: <span id="modal-age-val"></span></span>
+                    <p id="modal-desc">Descrição do gatinho.</p>
+
+                    <div class="modal-actions">
+                        <button id="adopt-btn">
+                            <span>Quero Adotar!</span> 🐾
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Feito com 💖 e muitos ronronados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
